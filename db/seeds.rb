@@ -7,7 +7,7 @@ Routine.destroy_all
 puts "Initializing seedlings..."
 
 puts "Creating users..."
-u1 = User.create(first_name:"Sarah", last_name:"Nicole", email: "rodarte_sarah@yahoo.com", password_digest:"123456", gender: "female", age: 31, weight: 112.0, height: 5.1, activity_level: "lightly active",tdee: 1200, water_intake: 3.7)
+u1 = User.create(first_name:"Sarah", last_name:"Nicole", email: "rodarte_sarah@yahoo.com", password:"12345678", gender: "female", age: 31, weight: 112.0, height: 5.1, activity_level: "lightly active",tdee: 1200, water_intake: 3.7)
 
 
 
@@ -74,10 +74,10 @@ e56 =Exercise.create(name: "dumbbell high step-up", category: "legs", tempo:2011
 
 puts "Creating Workout Routines..."
 
-Routine.create(name:"heavy chest", rest: 60 , sets: "3 of 12" ,exercise_id: e53.id, user_id: u1.id)
-Routine.create(name:"back day", rest: 60 , sets: "3 of 12",exercise_id: e48.id, user_id: u1.id)
-Routine.create(name:"leg day", rest: 60 , sets: "3 of 12" ,exercise_id: e48.id, user_id: u1.id)
-Routine.create(name:"arms", rest: 60 , sets: "3 of 12" ,exercise_id: e48.id, user_id: u1.id)
-Routine.create(name:"shoulder day", rest: 60 , sets: "3 of 12",exercise_id: e48.id, user_id: u1.id)
+Routine.create(name:"heavy chest", rest: 60 , sets: "3 of 12 sets" ,exercise_id: e53.id, user_id: u1.id)
+Routine.create(name:"back day", rest: 60 , sets: "3 of 12 sets",exercise_id: e48.id, user_id: u1.id)
+Routine.create(name:"leg day", rest: 60 , sets: "3 of 12 sets" ,exercise_id: e48.id, user_id: u1.id)
+Routine.create(name:"arms", rest: 60 , sets: "3 of 12 sets" ,exercise_id: e48.id, user_id: u1.id)
+Routine.create(name:"shoulder day", rest: 60 , sets: "3 of 12 sets",exercise_id: e48.id, user_id: u1.id)
 
 puts "Finally....we are done seeding!"

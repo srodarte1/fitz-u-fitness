@@ -20,10 +20,10 @@ class RoutinesController < ApplicationController
   end
 
   # PATCH/PUT /routines/1
-  # def update
-  #   @routine.update!(routine_params)
-  #   render json: @routine, status: :accepted
-  # end
+  def update
+    @routine.update!(routine_params)
+    render json: @routine, status: :accepted
+  end
 
   # DELETE /routines/1
   def destroy
